@@ -1,0 +1,85 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              Black_bear_01.jpg  label:                 black bear
+ 2 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 3 key:                     Dog_01.jpg  label:                        dog
+ 4 key:                     Dog_02.jpg  label:                        dog
+
+     MATCH:
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier: american black bear, black bear, ursus americanus, euarctos americanus
+
+ NOT A MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                      water jug
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                      chihuahua
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier: american black bear, black bear, ursus americanus, euarctos americanus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                      water jug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+This Run of The Program uses The CNN Model: vgg
+
+The Total Number of Images in the Project is: 4
+
+The Number of Dog Images is: 2
+
+The Number of Images Labeled as Not-a-Dog is: 2
+
+The Number of correctly classified dog breeds: 0
+
+The Stats of pct_match 'The Percentage Label Matches' is 25.0
+
+The Stats of pct_correct_dogs 'The Percentage of Correctly Classified Dog Images' is 100.0
+
+The Stats of pct_correct_breed 'The Percentage of Correctly Classified Dog Breeds' is 0.0
+
+The Stats of pct_correct_notdogs 'The Percentage of Correctly Classified Non-Dog Images' is 100.0
+
+Misclassified Dog Breeds: 
+
+This Pet Entry that has Pet Image Label of dog and Classifier Label of golden retriever is Breed-Misclassified by The Model
+
+This Pet Entry that has Pet Image Label of dog and Classifier Label of chihuahua is Breed-Misclassified by The Model
+
+
+** Total Elapsed Runtime: 0:0:1
